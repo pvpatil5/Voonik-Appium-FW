@@ -13,7 +13,8 @@ import com.app.androidapp.init.GlobalVariables;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class BaseLib{
+public class BaseLib
+{
 	public static  GlobalVariables gv = new GlobalVariables();
 	@BeforeClass
 	public void _LaunchApp() throws MalformedURLException
@@ -42,7 +43,7 @@ public class BaseLib{
 	@AfterClass
 	public void shutDownApp()
 	{
-	
+		
 			
 	}
 	

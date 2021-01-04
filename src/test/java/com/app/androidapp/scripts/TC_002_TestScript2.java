@@ -14,10 +14,13 @@ public class TC_002_TestScript2 extends BaseLib{
 	@Test
 	public void tc_002_testTwo() throws IOException, InterruptedException
 	{
-		LandingPage lp = new LandingPage(gv.driver);
 		
+		//step 1 
+		LandingPage lp = new LandingPage(gv.driver);
+		//step 2
 		lp.tapOnViewsMenu();
 		
 	}
 
+	
 }

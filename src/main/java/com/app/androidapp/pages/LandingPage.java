@@ -3,6 +3,7 @@ package com.app.androidapp.pages;
 import java.io.IOException;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.app.androidapp.util.MobileActionUtil;
@@ -11,6 +12,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.pagefactory.iOSFindBy;
 
 public class LandingPage
 {
@@ -25,9 +27,9 @@ public class LandingPage
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
-
 	public void tapOnViewsMenu() throws IOException, InterruptedException
 	{
 		MobileActionUtil.tapOnElement(viewsbtn, driver);
+		
 	}
 }
